@@ -6,7 +6,7 @@ class Vehicle:
 
     # TASCA: Fes el Getter per llegir els kms (ja que és privat)
     def llegir_kms(self):
-        pass
+        return self.__kms
 
     # TASCA: Fes el Setter amb seguretat anti-frau
     def actualitzar_kms(self, nous_kms):
