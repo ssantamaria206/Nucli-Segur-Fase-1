@@ -1,11 +1,11 @@
-# Nucli-Segur-Fase-1
-
-## Passos a seguir per executar el programa
-
-1. Descarga "future_motors.py" y "test_fase1.py"
-
-2. Crea una carpeta y ponlos dentro
-
-3. Abre una terminal y muevete a la carpeta con comandos
-
-4. Una vez dentro de la carpeta con la terminal y los dos archivos dentro ejecuta el siguiente comando ```python3 test_fase1.py```
+# Nucli Segur fase 1
+Sistema de comprovació de kilometratge de cotxes amb Python.
+Projecte per aprendre Git i Github.
+## Com executar-ho
+1. Clona el projecte.
+2. Executa `python future_computers.py`
+## ️ Tecnologies
+- Python 3.10
+- Git & GitHub
+## 👤 Autor
+Salvador Santamaria
