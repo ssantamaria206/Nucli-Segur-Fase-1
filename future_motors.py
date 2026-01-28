@@ -12,4 +12,8 @@ class Vehicle:
     def actualitzar_kms(self, nous_kms):
         # Si nous_kms és més petit que self.__kms, retorna False.
         # Si és correcte, actualitza i retorna True.
-        pass
+        if nous_kms < self.__kms:
+            return False
+        else:
+            self.__kms = nous_kms
+            return True
