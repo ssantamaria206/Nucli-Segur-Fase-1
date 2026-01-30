@@ -17,3 +17,19 @@ class Vehicle:
         else:
             self.__kms = nous_kms
             return True
+class Esportiu(Vehicle):
+    def calcular_preu(self, dies):
+        PreuDiaEsportiu = 100
+        preu = dies * PreuDiaEsportiu
+        return preu
+
+class Camio(Vehicle):
+    def calcular_preu(self, dies, tones):
+        PreuDiaCamio = 50
+        preu = dies * PreuDiaCamio + tones * 20
+        return preu
+
+
+
+# (2 dies * 50) + (10 tones * 20) = 100 + 200 = 300€
+#self.assertEqual(volvo.calcular_preu(2), 300)
