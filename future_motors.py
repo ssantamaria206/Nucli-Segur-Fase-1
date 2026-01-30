@@ -1,8 +1,6 @@
+import abc
 class Vehicle:
-    def __init__(self, matricula, model, kms_inicials):
-        self.matricula = matricula
-        self._model = model       # Protegit (un guió)
-        self.__kms = kms_inicials # Privat (dos guions)
+
 
     # TASCA: Fes el Getter per llegir els kms (ja que és privat)
     def llegir_kms(self):
@@ -18,12 +16,18 @@ class Vehicle:
             self.__kms = nous_kms
             return True
 class Esportiu(Vehicle):
+    def __init__(self, matricula, model, kms_inicials):
+        self.matricula = matricula
+        self._model = model       # Protegit (un guió)
+        self.__kms = kms_inicials # Privat (dos guions)
     def calcular_preu(self, dies):
         PreuDiaEsportiu = 100
         preu = dies * PreuDiaEsportiu
-        return preu
+        return preu 
 
 class Camio(Vehicle):
+    def __init__(self, matricula, model, kms_inicials, tones):
+        pass
     def calcular_preu(self, dies, tones):
         PreuDiaCamio = 50
         preu = dies * PreuDiaCamio + tones * 20
