@@ -27,10 +27,13 @@ class Esportiu(Vehicle):
 
 class Camio(Vehicle):
     def __init__(self, matricula, model, kms_inicials, tones):
-        pass
-    def calcular_preu(self, dies, tones):
+        self.matricula = matricula
+        self._model = model       # Protegit (un guió)
+        self.__kms = kms_inicials # Privat (dos guions)
+        self.tones = tones
+    def calcular_preu(self, dies):
         PreuDiaCamio = 50
-        preu = dies * PreuDiaCamio + tones * 20
+        preu = dies * PreuDiaCamio + self.tones *  20
         return preu
 
 
